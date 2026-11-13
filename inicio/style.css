@@ -1,17 +1,1 @@
-*{
-    box-sizing: 20px;
-}
-
-.header{
-    background-color: #a59595 ;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    align-items: center;
-}
-
-.nav-conteiner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* Estilo e organização que Reinan vai criar */

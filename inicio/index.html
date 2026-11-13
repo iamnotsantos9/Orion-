@@ -1,31 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ìnicio-Empresa Orion</title>
+    <title>Início | ORION Technologies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header class="header">
-    <div class="Container-inicio">
-        <h1 class="titulo">
-        <strong>ORION Technologies</strong></h1>
+    <header class="navbar">
+    <div class="container navbar__inner">
+        <a href="../inicio/index.html" class="navbar__logo" aria-label="ORION Technologies - página inicial">
+            <svg class="navbar__logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="12" stroke="#2f7bff" stroke-width="2"/>
+                <ellipse cx="16" cy="16" rx="12" ry="5" transform="rotate(-30 16 16)" stroke="#3be0ff" stroke-width="1.5"/>
+                <circle cx="16" cy="16" r="3" fill="#3be0ff"/>
+            </svg>
+            <span>ORION <small>Technologies</small></span>
+        </a>
+        <button class="navbar__toggle" type="button"
+                aria-expanded="false" aria-controls="navbar-menu" aria-label="Abrir menu">
+            <span class="navbar__toggle-bar"></span>
+        </button>
+        <div class="navbar__menu" id="navbar-menu">
+            <nav aria-label="Navegação principal">
+                <ul class="navbar__links">
+                    <li><a class="navbar__link" href="../inicio/index.html" aria-current="page">Início</a></li>
+                    <li><a class="navbar__link" href="../serviços/index.html">Serviços</a></li>
+                    <li><a class="navbar__link" href="../sobre/index.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <a class="btn btn-primary"
+               href="https://wa.me/5581999999999?text=Olá!%20Gostaria%20de%20pedir%20um%20orçamento."
+               target="_blank" rel="noopener">Pedir orçamento</a>
+        </div>
     </div>
+</header>
 
-    <div class="nav-conteiner">
-    <nav>
-        <ul class="nav-links">
-            <li><a href="Início">Início</a> </li>
-            <li><a href="Serviços">Serviços</a> </li>
-            <li><a href="Sobre">Sobre</a> </li>
-            <li><a href="Pedir orçamento">Pedir orçamento</a> </li>
-        </ul>
-    </nav>
-        <a href="">Pedir orçamento</a>
-    </div>
-    </header>
+    <main>
+        
+    </main>
 
+   <script src="../nav.js"></script>
 </body>
 </html>

@@ -1,35 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orion</title>
+    <title>Sobre | ORION Technologies</title>
+    <meta name="description" content="Conheça a história, a missão e os valores da Orion Technologies, empresa de engenharia de software do Recife.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header">
-<h1>A história da Orion</h1>
-<p>De uma paixão por programação a uma empresa de 
-engenharia de software no Recife.</p>
-</div>
+    <header class="navbar">
+        <div class="container navbar__inner">
 
-<h2>Como tudo começou?</h2>
-<p>Sobre a Orion Technologies
-De uma paixão por programação a uma empresa de engenharia de software no Recife.
-A Orion Technologies nasceu da paixão pela tecnologia e do desejo de transformar ideias em soluções reais. O que começou como um interesse pela programação evoluiu para uma empresa dedicada a solucionar desafios empresariais por meio da inovação e da engenharia de software.
-Com origem em Recife, Pernambuco, desenvolvemos softwares, sistemas e soluções tecnológicas personalizadas, ajudando empresas a otimizar processos, superar desafios e alcançar melhores resultados.
-Acreditamos que a tecnologia é uma ferramenta para transformar negócios. Por isso, nosso compromisso é converter problemas em soluções e ideias em inovação.</p>
+            <a href="../inicio/index.html" class="navbar__logo" aria-label="ORION Technologies - página inicial">
+                <svg class="navbar__logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <circle cx="16" cy="16" r="12" stroke="#2f7bff" stroke-width="2"/>
+                    <ellipse cx="16" cy="16" rx="12" ry="5" transform="rotate(-30 16 16)" stroke="#3be0ff" stroke-width="1.5"/>
+                    <circle cx="16" cy="16" r="3" fill="#3be0ff"/>
+                </svg>
+                <span>ORION <small>Technologies</small></span>
+            </a>
 
-<h2>Para onde vamos?</h2>
-<p>Na Orion Technologies, enxergamos um futuro onde a tecnologia é o principal caminho para transformar negócios. Nosso objetivo é crescer como uma empresa de referência em engenharia de software, desenvolvendo soluções inteligentes que conectem inovação, eficiência e resultados.</p>
+            <button class="navbar__toggle" type="button"
+                    aria-expanded="false" aria-controls="navbar-menu" aria-label="Abrir menu">
+                <span class="navbar__toggle-bar"></span>
+            </button>
 
-<h2>Nossa missão</h2>
-<p>Desenvolver soluções tecnológicas inovadoras e personalizadas, solucionando problemas e impulsionando o crescimento das empresas.</p>
+            <div class="navbar__menu" id="navbar-menu">
+                <nav aria-label="Navegação principal">
+                    <ul class="navbar__links">
+                        <li><a class="navbar__link" href="../inicio/index.html">Início</a></li>
+                        <li><a class="navbar__link" href="../serviços/index.html">Serviços</a></li>
+                        <li><a class="navbar__link" href="../sobre/index.html" aria-current="page">Sobre</a></li>
+                    </ul>
+                </nav>
+                <a class="btn btn-primary"
+                   href="https://wa.me/5581999999999?text=Olá!%20Gostaria%20de%20pedir%20um%20orçamento."
+                   target="_blank" rel="noopener">Pedir orçamento</a>
+            </div>
 
-<h2>Nossos valores</h2>
-<p>Inovação: Buscar constantemente novas ideias e tecnologias.
-Excelência: Entregar soluções eficientes e de qualidade.
-Compromisso: Valorizar cada projeto e a necessidade de cada cliente.
-Transparência: Construir relações de confiança e parceria
-Evolução: Aprender, aprimorar e acompanhar o futuro da tecnologia.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <p class="eyebrow">Sobre a Orion Technologies</p>
+                <h1>A história da <span class="hero__accent">Orion</span></h1>
+                <p class="hero__lead">De uma paixão por programação a uma empresa de engenharia de software no Recife.</p>
+            </div>
+        </section>
+
+        <!-- Como tudo começou -->
+        <section class="section section--light">
+            <div class="container split">
+                <div>
+                    <p class="eyebrow">Origem</p>
+                    <h2>Como tudo começou?</h2>
+                </div>
+                <div class="prose">
+                    <p>A Orion Technologies nasceu da paixão pela tecnologia e do desejo de transformar ideias em soluções reais. O que começou como um interesse pela programação evoluiu para uma empresa dedicada a solucionar desafios empresariais por meio da inovação e da engenharia de software.</p>
+                    <p>Com origem em Recife, Pernambuco, desenvolvemos softwares, sistemas e soluções tecnológicas personalizadas, ajudando empresas a otimizar processos, superar desafios e alcançar melhores resultados.</p>
+                    <p>Acreditamos que a tecnologia é uma ferramenta para transformar negócios. Por isso, nosso compromisso é converter problemas em soluções e ideias em inovação.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visão e missão -->
+        <section class="section section--dark">
+            <div class="container cards-2">
+                <article class="panel">
+                    <p class="eyebrow">Visão</p>
+                    <h2>Para onde vamos?</h2>
+                    <p>Na Orion Technologies, enxergamos um futuro onde a tecnologia é o principal caminho para transformar negócios. Nosso objetivo é crescer como uma empresa de referência em engenharia de software, desenvolvendo soluções inteligentes que conectem inovação, eficiência e resultados.</p>
+                </article>
+                <article class="panel">
+                    <p class="eyebrow">Missão</p>
+                    <h2>Nossa missão</h2>
+                    <p>Desenvolver soluções tecnológicas inovadoras e personalizadas, solucionando problemas e impulsionando o crescimento das empresas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Valores -->
+        <section class="section section--light">
+            <div class="container">
+                <div class="section__head">
+                    <p class="eyebrow">Princípios</p>
+                    <h2>Nossos valores</h2>
+                </div>
+                <ul class="values">
+                    <li class="value">
+                        <span class="value__num">01</span>
+                        <h3>Inovação</h3>
+                        <p>Buscar constantemente novas ideias e tecnologias.</p>
+                    </li>
+                    <li class="value">
+                        <span class="value__num">02</span>
+                        <h3>Excelência</h3>
+                        <p>Entregar soluções eficientes e de qualidade.</p>
+                    </li>
+                    <li class="value">
+                        <span class="value__num">03</span>
+                        <h3>Compromisso</h3>
+                        <p>Valorizar cada projeto e a necessidade de cada cliente.</p>
+                    </li>
+                    <li class="value">
+                        <span class="value__num">04</span>
+                        <h3>Transparência</h3>
+                        <p>Construir relações de confiança e parceria.</p>
+                    </li>
+                    <li class="value">
+                        <span class="value__num">05</span>
+                        <h3>Evolução</h3>
+                        <p>Aprender, aprimorar e acompanhar o futuro da tecnologia.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container cta__inner">
+                <h2>Tem um desafio para a sua empresa?</h2>
+                <p>Vamos transformar o problema em solução.</p>
+                <a class="btn btn-primary"
+                   href="https://wa.me/5581999999999?text=Olá!%20Gostaria%20de%20pedir%20um%20orçamento."
+                   target="_blank" rel="noopener">Pedir orçamento</a>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../nav.js"></script>
 </body>
 </html>
